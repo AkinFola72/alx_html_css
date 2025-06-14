@@ -1,1 +1,35 @@
+/* 1. Set body as a flex container with vertical layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Use full viewport height */
+  margin: 0;
+}
 
+/* 2. Make main a flex container with horizontal layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Allow it to grow/shrink as needed */
+}
+
+/* 3. Define article to take 2/3 of the space */
+article {
+  flex: 2;
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 1rem;
+}
+
+/* 4. Define aside to take 1/3 of the space */
+aside {
+  flex: 1;
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 1rem;
+}
+
+/* Optional styling for header and footer */
+header,
+footer {
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
