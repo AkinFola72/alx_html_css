@@ -1,0 +1,61 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Your Figma Font', sans-serif;
+  background-color: #ffffff; /* Replace with Figma bg color */
+  color: #333333; /* Replace with text color from Figma */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Replace with actual padding from Figma */
+  background-color: #f8f8f8; /* From Figma */
+  height: 80px; /* Match Figma height */
+}
+
+header img {
+  height: 40px; /* Replace with Figma image height */
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333; /* From Figma */
+  font-size: 16px; /* From Figma */
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 40px;
+  background-color: #e6f0ff; /* Figma background */
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px; /* Match Figma */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666; /* From Figma */
+}
+
+.hero button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff; /* Figma button color */
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Match Figma */
+  cursor: pointer;
+}
