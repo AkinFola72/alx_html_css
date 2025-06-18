@@ -1,1 +1,72 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Source Sans Pro', sans-serif; /* or whatever font Figma uses */
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* === HEADER === */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px; /* adjust based on Figma */
+  background-color: #f8f9fa; /* use exact background from Figma */
+}
+
+.logo {
+  width: 120px; /* check Figma for actual width */
+  height: auto;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+}
+
+/* === HERO SECTION === */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 48px; /* adjust to match Figma spacing */
+  background-color: #ffffff;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 48px; /* match Figma font size */
+  color: #111111;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 32px;
+}
+
+.cta-button {
+  background-color: #007BFF; /* match button color from Figma */
+  color: #ffffff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.hero-image {
+  width: 500px; /* or 100% if responsive */
+  height: auto;
+}
