@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,56 +6,67 @@
 }
 
 body {
-  font-family: 'Your Figma Font', sans-serif;
-  background-color: #ffffff; /* Replace with Figma bg color */
-  color: #333333; /* Replace with text color from Figma */
+  font-family: 'Arial', sans-serif; /* or whatever font Figma uses */
+  background-color: #ffffff;
+  color: #333333;
 }
 
-/* Header */
-header {
+/* === HEADER === */
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px; /* Replace with actual padding from Figma */
-  background-color: #f8f8f8; /* From Figma */
-  height: 80px; /* Match Figma height */
+  padding: 24px 48px; /* adjust based on Figma */
+  background-color: #f8f9fa; /* use exact background from Figma */
 }
 
-header img {
-  height: 40px; /* Replace with Figma image height */
+.logo {
+  width: 120px; /* check Figma for actual width */
+  height: auto;
 }
 
-header nav a {
-  margin-left: 20px;
+.nav-links a {
+  margin-left: 24px;
   text-decoration: none;
-  color: #333; /* From Figma */
-  font-size: 16px; /* From Figma */
+  color: #333333;
+  font-size: 16px;
 }
 
-/* Hero Section */
+/* === HERO SECTION === */
 .hero {
-  padding: 60px 40px;
-  background-color: #e6f0ff; /* Figma background */
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 48px; /* adjust to match Figma spacing */
+  background-color: #ffffff;
 }
 
-.hero h1 {
-  font-size: 48px; /* Match Figma */
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 48px; /* match Figma font size */
+  color: #111111;
   margin-bottom: 20px;
 }
 
-.hero p {
+.hero-text p {
   font-size: 18px;
-  margin-bottom: 30px;
-  color: #666; /* From Figma */
+  color: #666666;
+  margin-bottom: 32px;
 }
 
-.hero button {
+.cta-button {
+  background-color: #007BFF; /* match button color from Figma */
+  color: #ffffff;
   padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
   font-size: 16px;
-  background-color: #007bff; /* Figma button color */
-  color: #fff;
-  border: none;
-  border-radius: 8px; /* Match Figma */
-  cursor: pointer;
+}
+
+.hero-image {
+  width: 500px; /* or 100% if responsive */
+  height: auto;
 }
