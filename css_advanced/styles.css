@@ -8,6 +8,8 @@
 body {
   font-family: 'Source Sans Pro', sans-serif; /* or whatever font Figma uses */
   background-color: #ffffff;
+  background-image: url('./images/Object.png'); /* ensure the path is correct */
+  background-repeat: no-repeat;
   color: #333333;
 }
 
