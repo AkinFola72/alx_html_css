@@ -225,8 +225,8 @@ main section:nth-of-type(4) p {
 main section:nth-of-type(4) button {
   margin-top: 2rem;
   padding: 0.8rem 2rem;
-  background-color: white;
-  color: #a66cff;
+  background-color: #a66cff;
+  color: white;
   border: none;
   font-weight: bold;
   border-radius: 25px;
@@ -242,6 +242,7 @@ main section:nth-of-type(5) {
 main section:nth-of-type(5) h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 main section:nth-of-type(5) > div {
@@ -252,11 +253,12 @@ main section:nth-of-type(5) > div {
   text-align: left;
   max-width: 1000px;
   margin: 0 auto;
+  color: white;
 }
 
 main section:nth-of-type(5) h3 {
   margin-bottom: 0.5rem;
-  color: #333;
+  color: white;
   font-size: 1rem;
 }
 
