@@ -1,4 +1,4 @@
-rating-container {
+.rating-container {
 display: flex;
 align-items: center;
 gap: 0.5rem;
@@ -18,7 +18,11 @@ color: #333;
 /* Existing styles below */
 
 /* Basic Reset */
-*
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /* Navbar */
 nav {
 display: flex;
@@ -113,7 +117,7 @@ font-size: 1rem;
 
 main section:nth-of-type(1) p {
 font-size: 0.9rem;
-color: #777;
+color: #fffdfd;
 }
 
 /* Testimonial */
@@ -305,35 +309,40 @@ font-size: 1.2rem;
 margin: 0 0.5rem;
 color: white;
 }
-
-.imagenine {
-width: 255px;
-height: 154px;
-border-radius: 8px;
-}
-.imagesix {
-width: 255px;
-height: 154px;
-border-radius: 8px;
-}
-.imageeight {
-width: 255px;
-height: 154px;
-border-radius: 8px;
-}
+/* Consolidated tutorial image styles */
+.imagenine,
+.imagesix,
+.imageeight,
 .imageseven {
-width: 255px;
-height: 154px;
-border-radius: 8px;
+  width: 255px;
+  height: 154px;
+  border-radius: 8px;
 }
 .grid {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 gap: 1rem;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-{
-box-sizing border-box;
+  main section:nth-of-type(1) > div {
+    flex-direction: column;
+  }
+
+  main section:nth-of-type(3) > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section:nth-of-type(4) > div {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .column {
@@ -347,4 +356,32 @@ padding: 5px;
 content: "";
 clear: both;
 display: table;
+}
+/* Container for tutorial image and play icon */
+.tutorial-image-container {
+  position: relative;
+  width: 255px;
+  height: 154px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Tutorial image inside the container */
+.tutorial-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Play icon overlay */
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;  /* Adjust based on your design */
+  height: 64px; /* Adjust based on your design */
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Allows clicks to pass through */
 }
